@@ -38,8 +38,14 @@ namespace ProjetoInterdisciplinar
                 if (validacao.getSomaDigiti() == true) situacao = "CPF Válido";
                 else situacao = "CPF Inválido";
                 labelSituacao.Text = situacao;
+                labelSituacao.ForeColor = Color.DarkGreen;
             }
-            else labelSituacao.Text = "CPF Inválido";
+            else
+            {
+                labelSituacao.Text = "CPF Inválido";
+                labelSituacao.ForeColor = Color.DarkRed;
+            }
+
             //corrigir erros de cpf terminado em 0
         }
     }

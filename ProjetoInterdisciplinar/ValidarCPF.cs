@@ -124,12 +124,14 @@ namespace ProjetoInterdisciplinar
                 if (this.digito1 != digi1) situacao = false;//digito gerado for diferente do digito digitado
                 else parte += 1;
             }
+
             if (parte == 2)
             {
                 controlePart(parte);
                 this.digito2 = opDivisao();//recebe o segundo digito verificador
                 if (this.digito2 != digi2) situacao = false;//digito gerado for diferente do digito digitado
             }
+            
             /*if(situacao == false)
             {
                 digito1 = 0;
